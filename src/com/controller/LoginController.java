@@ -58,4 +58,18 @@ public class LoginController {
 		session.removeAttribute("amountAddMsg");
 		return mav;
 	}
+	
+	@RequestMapping(value = "adminDashboard",method = RequestMethod.GET)
+	public ModelAndView adminDashboard() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("adminHome.jsp");
+		return mav;
+	}
+	
+	@RequestMapping(value = "logout",method = RequestMethod.GET)
+	public ModelAndView logOut() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("index.jsp");
+		return mav;
+	}
 }

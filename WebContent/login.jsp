@@ -13,7 +13,8 @@
 </head>
 <body>
 
-	<div class="container" style="border:2px solid black; padding:30px; margin:30px;">
+	<div class="container"
+		style="border: 2px solid black; padding: 30px; margin: 30px;">
 		<form action="loginCheck.spring" method="post">
 			<div class="form-group">
 				<label for="email">Email address</label> <input type="email"
@@ -26,25 +27,27 @@
 				<label for="password">Password</label> <input name="password"
 					type="password" class="form-control" id="password">
 			</div>
-			
+
 			<div class="form-group">
-			<label class="form-check-label" for="flexRadioDefault1">Type Of User</label>
-			<div class="form-check">
-				<input class="form-check-input" type="radio" name="typeOfUser"
-					id="typeOfUser1" value="admin" checked> 
-					<label class="form-check-label" for="typeOfUser1"> Admin </label>
+				<label class="form-check-label" for="flexRadioDefault1">Type
+					Of User</label>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="typeOfUser"
+						id="typeOfUser1" value="admin" checked> <label
+						class="form-check-label" for="typeOfUser1"> Admin </label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="typeOfUser"
+						id="typeOfUser2" value="customer"> <label
+						class="form-check-label" for="typeOfUser2"> Customer</label>
+				</div>
 			</div>
-			<div class="form-check">
-				<input class="form-check-input" type="radio" name="typeOfUser"
-					id="typeOfUser2" value="customer"> <label
-					class="form-check-label" for="typeOfUser2"> Customer</label>
-			</div>
-			</div>
-			<input type="submit" class="btn btn-primary "  value="Sign In"/>
-			<input type="reset" class="btn btn-secondary" value="Reset"/>
+			<input type="submit" class="btn btn-primary " value="Sign In" /> <input
+				type="reset" class="btn btn-secondary" value="Reset" />
+				<a href="customerSignUp.spring" class="btn btn-primary " >Sign Up</a>
 		</form>
 		<div>
-			<span style="color:red">${requestScope.msg}</span>
+			<span style="color: red">${requestScope.msg}</span>
 		</div>
 
 	</div>
