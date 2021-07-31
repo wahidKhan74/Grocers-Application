@@ -11,6 +11,7 @@
 <body>
 	<div class="container">
 		<h2>Grocers Application System</h2>
+		<%@include file="login.jsp" %>
 	</div>
 </body>
 </html>
